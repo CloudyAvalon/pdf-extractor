@@ -1,0 +1,8 @@
+deployment
+main.exe
+**/__pycache__
+.venv
+pysidedeploy.spec
+nuitka-crash-report.xml
+table_maker.pyproject.user
+.vscode

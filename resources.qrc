@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/document-open.svgz</file>
+        <file>images/go-next-view.svgz</file>
+        <file>images/go-previous-view.svgz</file>
+        <file>images/go-next-view-page.svgz</file>
+        <file>images/go-previous-view-page.svgz</file>
+        <file>images/zoom-in.svgz</file>
+        <file>images/zoom-out.svgz</file>
+        <file>images/zoom-fit-width.svgz</file>
+        <file>images/zoom-fit-best.svgz</file>
+        <file>images/zoom-original.svgz</file>
+        <file>images/zoom-previous.svgz</file>
+        <file>images/extract-data.svg</file>
+        <file>images/write-table.svg</file>
+        <file>images/load-table.svg</file>
+        <file>images/write-list.svg</file>
+        <file>images/read-mstable.svg</file>
+        <file>images/write-pdf.svg</file>
+        <file>images/read-config.svg</file>
+    </qresource>
+</RCC>

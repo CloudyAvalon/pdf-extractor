@@ -1,0 +1,527 @@
+{
+    "pump": {
+        "flow_gap": 6,
+        "lift_gap": 4
+    },
+    "styles": [
+        {
+            "name": "default",
+            "settings": {
+                "page_num": "default",
+                "extract": {
+                    "matchers": [
+                        [
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "位号"
+                                ]
+                            },
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "泵名称"
+                                ]
+                            },
+                            null,
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "项目"
+                                ]
+                            },
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "用户"
+                                ]
+                            },
+                            null,
+                            null,
+                            null
+                        ],
+                        [
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "液体类型或名称"
+                                ]
+                            },
+                            null,
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "泵送温度",
+                                    [
+                                        "℃",
+                                        "°C"
+                                    ]
+                                ],
+                                "skip": false
+                            },
+                            null,
+                            null,
+                            {
+                                "type": "change",
+                                "pre": [
+                                    "比重"
+                                ],
+                                "handler": {
+                                    "type": "factor",
+                                    "arg": 1000
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "粘度",
+                                    "mPa.s"
+                                ]
+                            },
+                            null,
+                            null,
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "入口压力",
+                                    "MPaG",
+                                    null
+                                ],
+                                "skip": false
+                            },
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "入口压力",
+                                    "MPaG"
+                                ],
+                                "skip": false
+                            },
+                            null,
+                            null,
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "出口压力",
+                                    "MPaG"
+                                ],
+                                "skip": false
+                            },
+                            null,
+                            null,
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "流量",
+                                    "m³/h",
+                                    null
+                                ],
+                                "skip": false
+                            },
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "流量",
+                                    "m³/h"
+                                ],
+                                "skip": false
+                            },
+                            null,
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "扬程",
+                                    "m"
+                                ]
+                            },
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "NPSHA",
+                                    null,
+                                    "m"
+                                ]
+                            }
+                        ],
+                        [
+                            null,
+                            null,
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "型式"
+                                ]
+                            },
+                            {
+                                "type": "list",
+                                "pre": [
+                                    "附录",
+                                    "H",
+                                    "的等级"
+                                ]
+                            },
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null,
+                            null
+                        ],
+                        [
+                            null,
+                            null,
+                            null,
+                            null
+                        ]
+                    ]
+                },
+                "writeback": {
+                    "matchers": [
+                        null,
+                        null,
+                        null,
+                        {
+                            "pre": [
+                                "型号"
+                            ],
+                            "offset": 10
+                        },
+                        null,
+                        null,
+                        null,
+                        {
+                            "pre": [
+                                "kW", "效率"
+                            ],
+                            "offset": 10
+                        },
+                        null,
+                        {
+                            "pre": [
+                                "名义转速", "RPM"
+                            ],
+                            "offset": 60
+                        },
+                        null,
+                        {
+                            "pre": [
+                                "机座号或型号"
+                            ],
+                            "offset": 50
+                        },
+                        {
+                            "pre": [
+                                "制造厂"
+                            ],
+                            "offset": 40,
+                            "is_cn": true
+                        },
+                        {
+                            "pre": [
+                                "壳体"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "37", "叶轮"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "40", "轴"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "壳体耐磨环"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "叶轮耐磨环"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "导流壳"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "检查等级", "(表", "14)"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "额定负荷转速", "RPM"
+                            ],
+                            "offset": 100
+                        },
+                        {
+                            "pre": [
+                                "叶轮直径",
+                                "额定"
+                            ],
+                            "offset": 7,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "叶轮直径",
+                                "额定",
+                                "最大"
+                            ],
+                            "offset": 7,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "叶轮直径",
+                                "额定",
+                                "最大",
+                                "最小"
+                            ],
+                            "offset": 7,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "额定功率"
+                            ],
+                            "offset": 7
+                        },
+                        null,
+                        {
+                            "pre": [
+                                "曲线上最佳效率点流量", "(对应额定叶轮直径)"
+                            ],
+                            "offset": 40
+                        },
+                        {
+                            "pre": [
+                                "最佳操作范围", "(6.1.11)"
+                            ],
+                            "offset": 40,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "最佳操作范围", "(6.1.11)","到"
+                            ],
+                            "offset": 3,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "允许操作范围"
+                            ],
+                            "offset": 50,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "允许操作范围","到"
+                            ],
+                            "offset": 3,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "额定叶轮的最大扬程"
+                            ],
+                            "offset": 100
+                        },
+                        {
+                            "pre": [
+                                "额定叶轮的最大功率","(6.8.9)"
+                            ],
+                            "offset": 80
+                        },
+                        {
+                            "pre": [
+                                "额定流量下的NPSH3"
+                            ],
+                            "offset": 100
+                        },
+                        {
+                            "pre": [
+                                "比转速", "(6.1.9)", "m3/s,", "rpm,", "m"
+                            ],
+                            "offset": 4
+                        },
+                        {
+                            "pre": [
+                                "吸入比转速", "m3/s,", "rpm,", "m"
+                            ],
+                            "offset": 4
+                        },
+                        {
+                            "pre": [
+                                "吸入口"
+                            ],
+                            "offset": 70
+                        },
+                        {
+                            "pre": [
+                                "排出口"
+                            ],
+                            "offset": 70
+                        },
+                        {
+                            "pre": [
+                                "排液口"
+                            ],
+                            "offset": 45
+                        },
+                        null,
+                        {
+                            "pre": [
+                                "MAWP", "", "(6.3.6)"
+                            ],
+                            "offset": 40,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "MAWP", "", "(6.3.6)", "MPaG", "@"
+                            ],
+                            "offset": 7,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "水压试验", ""
+                            ],
+                            "offset": 80,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "水压试验", "", "MPaG", "@"
+                            ],
+                            "offset": 7,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "转向:", "(从联轴器端看)"
+                            ],
+                            "offset": 60,
+                            "is_cn": true
+                        },
+                        {
+                            "pre": [
+                                "特殊连接件","(6.4.3.3)","制造厂"
+                            ],
+                            "offset": 50,
+                            "is_cn": true
+                        },
+                        null,
+                        {
+                            "pre": [
+                                "径向轴承"
+                            ],
+                            "offset": 15,
+                            "skip": false,
+                            "is_cn": true
+                        },
+                        {
+                            "pre": [
+                                "径向轴承", "/"
+                            ],
+                            "offset": 15,
+                            "skip": false
+                        },
+                        null,
+                        {
+                            "pre": [
+                                "推力轴承"
+                            ],
+                            "offset": 15,
+                            "skip": false,
+                            "is_cn": true
+                        },
+                        {
+                            "pre": [
+                                "推力轴承", "/"
+                            ],
+                            "offset": 15,
+                            "skip": false
+                        },
+                        null,
+                        {
+                            "pre": [
+                                "润滑油粘度的", "ISO", "等级号"
+                            ],
+                            "offset": 70
+                        },
+                        {
+                            "pre": [
+                                "轴承箱"
+                            ],
+                            "offset": 3
+                        },
+                        {
+                            "pre": [
+                                "换热器"
+                            ],
+                            "offset": 3
+                        },
+                        {
+                            "pre": [
+                                "总冷却水"
+                            ],
+                            "offset": 70
+                        },
+                        {
+                            "pre": [
+                                "位号", "泵"
+                            ],
+                            "offset": 7,
+                            "dir": 1,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "位号", "泵", "驱动机"
+                            ],
+                            "offset": 7,
+                            "dir": 1,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "位号", "泵", "驱动机", "齿轮箱", "底座"
+                            ],
+                            "offset": 7,
+                            "dir": 1,
+                            "skip": false
+                        },
+                        {
+                            "pre": [
+                                "位号", "泵", "驱动机", "齿轮箱", "底座", "总重"
+                            ],
+                            "offset": 7,
+                            "dir": 1,
+                            "skip": false
+                        },
+                        null,
+                        null
+                    ],
+                    "h_pos": 1,
+                    "v_pos": 2,
+                    "font_size": 7,
+                    "font_color": "red"
+                }
+            }
+        }
+    ]
+}

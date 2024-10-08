@@ -1,0 +1,28 @@
+{
+    "files": [
+        "main.py",
+        "mainwindow.py",
+        "zoomselector.py",
+        "file_style_selector.py",
+        "pump_tab_widget.py",
+        "ui_mainwindow.py",
+        "ui_pumpselectortab.py",
+        "rc_resources.py",
+        "table_maker/__init__.py",
+        "table_maker/const_def.py",
+        "table_maker/data_extractor.py",
+        "table_maker/matched_arg.py",
+        "table_maker/mstable_writer.py",
+        "table_maker/pump_selector.py",
+        "table_maker/file_style/basic.py",
+        "table_maker/file_style/CNPC1.py",
+        "table_maker/file_style/default.py",
+        "table_maker/file_style/Sinopec1.py",
+        "mainwindow.ui",
+        "pumpselectortab.ui",
+        "resources.qrc",
+        ".gitignore",
+        "pysidedeploy.spec",
+        "README.md"
+    ]
+}
